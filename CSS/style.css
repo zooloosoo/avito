@@ -1,0 +1,185 @@
+body {
+font-family: "Roboto", sans-serif;
+font-size: 14px;
+line-height: 16px;
+color: #0A143A;
+}
+.container {
+  max-width: 1146px;
+  margin: auto;
+}
+.header {
+  padding: 30px 0px;
+  margin-bottom: 12px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 24px;
+}
+.navbar-menu {
+  margin-right: auto;
+}
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0px 22px;
+  width: 267px;
+  display: flex;
+}
+.menu-item:not(:last-child) {
+  margin-right: 14px;
+}
+.menu-link, .button {
+  text-decoration: none;
+  color: inherit;
+}
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.button-link {
+  color: inherit;
+}
+.button-primary {
+  background: #256EEB;
+  border-radius: 5px;
+  color: white;
+}
+.search-panel {
+  height: 50px;
+  background: #256EEB;
+  border-radius: 5px;
+  padding: 3px;
+  display: flex;
+}
+.search-input {
+  flex-grow: 1;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding: 0px 22px;
+}
+.search-button {
+  background-color: #256EEB;
+  border: none;
+  color: white;
+  padding: 16px 17px 15px 20px;
+  display: flex;
+  align-items: center;
+}
+.search-button-text {
+  margin-left: 5px;
+}
+.page-content {
+  display: grid; /* Отображение контента по колонкам*/
+  grid-template-columns: 9fr 3fr; /* Делит на 2 колонки в соотношении 9 к 3 */
+  grid-column-gap: 30px; /* Расстояние между колонками 30 зч */
+}
+.head-block {
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.card-img {
+  border-radius: 10px;
+  width: 264px;
+  height: 178px;
+  object-fit: cover; /* обрезает изображение под размер */
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* переносит блоки если они не помещаются */
+}
+.card {
+  padding-bottom: 20px;
+}
+.card:not(:nth-child(3n)) {
+  margin-right: 20px;
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-title {
+  max-width: 195px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #256EEB;
+  margin-top: 12px;
+  margin-bottom: 5px;
+}
+.card-link {
+  text-decoration: none;
+}
+.like {
+  border: none;
+  background-color: white;
+  cursor: pointer; /* При наведении меняет курсор */
+  margin-left: 15px;
+}
+.card-price {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: block;
+}
+.card-text {
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.side-bar h3 {
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 23px;
+}
+.side-text {
+  margin-bottom: 25px;
+}
+.side-title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+.service-text {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 217px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+.footer-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 18px;
+  margin-bottom: 5px;
+  color: #C4C4C4;
+}
+.footer-list {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C4C4;
+}
+.footer-polit {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+}
+.footer-link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  margin-bottom: 5px;
+}
