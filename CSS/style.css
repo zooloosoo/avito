@@ -15,8 +15,13 @@ color: #0A143A;
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 24px;
+}
+.menu-all {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 .navbar-menu {
   margin-right: auto;
@@ -76,12 +81,13 @@ color: #0A143A;
 .page-content {
   display: grid; /* Отображение контента по колонкам*/
   grid-template-columns: 9fr 3fr; /* Делит на 2 колонки в соотношении 9 к 3 */
-  grid-column-gap: 30px; /* Расстояние между колонками 30 зч */
+  grid-column-gap: 10px; /* Расстояние между колонками 30 зч */
 }
 .head-block {
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 25px;
+  font-size: 24px;
 }
 .card-img {
   border-radius: 10px;
@@ -95,8 +101,6 @@ color: #0A143A;
 }
 .card {
   padding-bottom: 20px;
-}
-.card:not(:nth-child(3n)) {
   margin-right: 20px;
 }
 .card-header {
@@ -182,4 +186,256 @@ color: #0A143A;
   text-decoration: none;
   color: inherit;
   margin-bottom: 5px;
+}
+.main-single {
+  display: flex;
+  align-items: flex-start;
+}
+.content {
+  max-width: 460px;
+  margin-right: 30px;
+}
+.swiper-container {
+        width: 100%;
+
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .mySwiper2 {
+        width: 100%;
+        height: 357px;
+        border-radius: 10px;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 3px; /*проверить*/
+      }
+.content-text {
+  font-size: 14px;
+  line-height: 140%;
+}
+.single-price {
+  display: block;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+.author {
+  min-width: 264px;
+}
+.author-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.author-photo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /*запрет растяжения картинки*/
+  border-radius: 25px;
+}
+.author-name {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+.rating {
+  margin-bottom: 5px;
+}
+.rating-counter {
+  opacity: 0.5;
+  margin-left: 10px;
+}
+.author-status {
+  font-size: 12px;
+  line-height: 14px;
+}
+.button-block {
+  display: block;
+  width: 100%;
+  height: 54px;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 14px;
+  border: none;
+}
+.button-message {
+  background: #14B4BE;
+  color: #fff;
+}
+.img-rek {
+  margin: 7px 0px 19px 0px;
+}
+.menu-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none; /*отключаем кнопку везде кроме мобильных*/
+}
+.close-menu {
+  display: none;
+  background-color: #fff;
+  border: none;  
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+  .card {
+    width: 45%;
+  }
+  .card-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 740px;
+  }
+  .card-img {
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 560px;
+  }
+  .page-content {
+    grid-template-columns: 8fr 4fr; /* Делит на 2 колонки в соотношении 8 к 4 */
+  }
+  .card {
+    width: 100%;
+  }
+  .menu-button {
+    display: block;
+  }
+  .menu-all {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 9;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, opacity 0.2s;
+    opacity: 0;
+    transform: translateY(-100%); /* уберем меню в сторону */
+  }
+  .is-open {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  .navbar-menu {
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+  }
+.menu-item:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.close-menu {
+display: block;
+position: absolute;
+top: 30px;
+right: 30px;
+cursor: pointer;
+}
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+  .page-content {
+    grid-template-columns: 12fr ; /* Делит на 2 колонки в соотношении 8 к 4 */
+  }
+  .card {
+    margin-right: 0;
+  }
+  .card-img {
+    height: 250px;
+  }
 }
